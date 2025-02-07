@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Bank Account</title>
+    <title>Evan's IBAN</title>
     <style>
-        /* Set the background image */
+        /* Set the background image (PNG) with reduced size (zoomed out more) */
         body {
             background: url('https://raw.githubusercontent.com/vange-lee/Evan-s-Bank-Account/main/invitation.png') no-repeat center center fixed;
-            background-size: cover;  /* Cover the whole screen */
+            background-size: 50%;  /* Make the image 2 times smaller */
+            background-position: center; /* Keeps the image centered */
             font-family: 'Arial', sans-serif;
             color: #fff;
             display: flex;
@@ -84,7 +85,7 @@
 </head>
 <body>
     <div class="content-box">
-        <h2>Join Us for the Big Day!</h2>
+        <h2>Evan's IBAN</h2>
         <input type="text" value="GR 1234 5678 9012 3456" id="accountNumber" readonly>
         <button onclick="copyText()">Copy Account Number</button>
     </div>
