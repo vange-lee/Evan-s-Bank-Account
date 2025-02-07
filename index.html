@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copy Bank Account</title>
     <style>
-        /* Set the background image (PNG file) */
+        /* Set the background image */
         body {
-            background: url('https://github.com/vange-lee/Evan-s-Bank-Account/blob/main/invitation.png') no-repeat center center fixed;
-            background-size: cover;
+            background: url('https://raw.githubusercontent.com/vange-lee/Evan-s-Bank-Account/main/invitation.png') no-repeat center center fixed;
+            background-size: cover;  /* Cover the whole screen */
             font-family: 'Arial', sans-serif;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100vh;  /* Full screen height */
             margin: 0;
             text-align: center;
         }
 
-        /* Styling for the content box */
+        /* Styling for the content box (buttons and input field) */
         .content-box {
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
             padding: 30px;
@@ -32,7 +32,7 @@
             font-size: 2.5rem;
             margin-bottom: 20px;
             font-family: 'Comic Sans MS', cursive;
-            color: #00A9F4; /* Fun blue color for a boy theme */
+            color: #00A9F4; /* Fun blue color for the theme */
         }
 
         /* Input field styling */
@@ -59,7 +59,7 @@
         }
 
         button:hover {
-            background-color: #007b9f; /* Darker blue when hovering */
+            background-color: #007b9f; /* Darker blue on hover */
         }
 
         /* Make sure everything fits well on mobile */
@@ -84,7 +84,7 @@
 </head>
 <body>
     <div class="content-box">
-        <h2>Join Us for the Big Day!</h2>
+        <h2>Evan's IBAN</h2>
         <input type="text" value="GR 1234 5678 9012 3456" id="accountNumber" readonly>
         <button onclick="copyText()">Copy Account Number</button>
     </div>
