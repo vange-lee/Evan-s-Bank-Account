@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan's IBAN</title>
     <style>
-        /* Set the background image with cover, making it resize for all screen sizes */
+        /* Set the background image (PNG) with contain to keep it proportional */
         body {
             background: url('https://raw.githubusercontent.com/vange-lee/Evan-s-Bank-Account/main/invitation.png') no-repeat center center fixed;
-            background-size: cover;  /* Make the background cover the whole screen, scaling the image */
+            background-size: contain;  /* Ensures the background image stays proportional */
             background-position: center; /* Keeps the image centered */
+            background-attachment: fixed; /* Keeps background fixed while scrolling */
             font-family: 'Arial', sans-serif;
             color: #fff;
             display: flex;
@@ -18,6 +19,7 @@
             height: 100vh;  /* Full screen height */
             margin: 0;
             text-align: center;
+            background-color: #f4f4f4;  /* Light background color to contrast */
         }
 
         /* Styling for the content box (buttons and input field) */
