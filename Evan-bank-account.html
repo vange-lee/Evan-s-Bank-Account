@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Bank Account</title>
+    <script>
+        function copyText() {
+            var text = document.getElementById("accountNumber");
+            text.select();
+            document.execCommand("copy");
+            alert("Account Number Copied!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Bank Account Details</h2>
+    <input type="text" value="GR 1234 5678 9012 3456" id="accountNumber" readonly>
+    <button onclick="copyText()">Copy Account Number</button>
+</body>
+</html>
